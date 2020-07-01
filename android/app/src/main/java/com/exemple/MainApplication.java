@@ -11,8 +11,6 @@ import com.facebook.soloader.SoLoader;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
-import androidx.annotation.Nullable;
-
 public class MainApplication extends Application implements ReactApplication {
 
   private final ReactNativeHost mReactNativeHost =
@@ -34,11 +32,6 @@ public class MainApplication extends Application implements ReactApplication {
         @Override
         protected String getJSMainModuleName() {
           return "index";
-        }
-
-        @Override
-        protected @Nullable String getBundleAssetName() {
-          return "app.bundle";
         }
       };
 
